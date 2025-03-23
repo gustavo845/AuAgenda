@@ -1,0 +1,51 @@
+POST http://localhost:3000/api/animal/create 
+Content-Type: application/json 
+
+{
+    "name":"billy",
+    "age":10,
+    "type":"cachorro",
+    "fur":"longo",
+    "breed":"shitzu"
+}
+
+###
+
+GET http://localhost:3000/api/user
+
+###
+
+GET http://localhost:3000/api/animal
+
+###
+GET http://localhost:3000/api/user/67e01938375d1759c2e84e14
+
+###
+GET http://localhost:3000/api/animal/67e02480276d94ded48ad674
+
+###
+DELETE http://localhost:3000/api/user/67e01938375d1759c2e84e14
+
+###
+DELETE http://localhost:3000/api/animal/67e01dc9276d94ded48ad66e
+
+###
+PUT http://localhost:3000/api/user/67e01531d616625c5554bf6c
+Content-Type: application/json
+
+{
+    "email": "milanatti2009@gmail.com",
+    "password": "mdsc129"
+}
+
+###
+PUT http://localhost:3000/api/animal/67e01dc9276d94ded48ad66e
+Content-Type: application/json
+
+{
+    "name": "rex",
+    "age": 9,
+    "type": "gato",
+    "fur": "longo",
+    "breed": "amarelo"
+}
